@@ -1,13 +1,50 @@
-This EU land cover spatial modeling project is ongoing. 
-Goal: Use train/test split and validation to create spatial models which will allow accurate prediction of land type. 
+# EU Land Cover Spatial Modeling Project
 
-The EuroSAT RGB dataset is made up of labeled satellite image patches showing different land use and land cover classes in Europe. Each image is a 64×64 RGB satellite tile, categorized into one of ten classes such as forest, residential areas, rivers, and agricultural land. 
+This project focuses on building **spatial models** for European land cover classification. Using train/test splits and validation, the goal is to create models that can accurately predict land type from satellite imagery.
 
-The data was found at https://huggingface.co/datasets/blanchon/EuroSAT_RGB
+---
 
-The dataset has 27,000 labeled images split into training (16,200 rows), validation (5,400 rows), and test (5,400 rows) sets. Each image record includes three columns consisting of an RGB image, a categorical class label with ten possible values, and a filename identifier.
+## Dataset
 
-The outcome column is the "label" variable, which represents the land use or cover category of each satellite image. Future work trained on this dataset will predict the label based on the image column.
+We use the **EuroSAT RGB dataset**, which consists of labeled satellite image patches representing different land use and land cover classes in Europe.  
 
-I found that the EuroSAT RGB dataset is clean and well-structured, with no missing labels or filenames detected, which I'm grateful to find from this huggingface dataset. The images are all uniform at 64×64 pixels with three RGB channels with distinct distributions. Class distribution across the ten land use categories is relatively balanced. Pixel intensity values span 0–255 for all color channels, so there will be no clipping or normalization issues. A limitation of the dataset is its relatively small image size, but this also makes the data efficient for the project.
+- **Image size:** 64×64 pixels, RGB  
+- **Classes:** 10 categories (e.g., forest, residential areas, rivers, agricultural land)  
+- **Total images:** 27,000  
+  - Training set: 16,200 images  
+  - Validation set: 5,400 images  
+  - Test set: 5,400 images  
+- **Columns:**  
+  1. `image` – RGB satellite tile  
+  2. `label` – land use or land cover category (outcome variable)  
+  3. `filename` – image identifier  
+
+The dataset is available at: [Hugging Face EuroSAT_RGB](https://huggingface.co/datasets/blanchon/EuroSAT_RGB)
+
+---
+
+## Data Quality and Characteristics
+
+- **Clean and well-structured:** No missing labels or filenames detected.  
+- **Uniformity:** All images are 64×64 pixels with three RGB channels.  
+- **Balanced classes:** Distribution across the ten categories is relatively even.  
+- **Pixel values:** 0–255 across all channels; no clipping or normalization issues.  
+- **Limitation:** Small image size, but this also improves computational efficiency for modeling.  
+
+---
+
+## Project Goal
+
+Future work will involve training models on the EuroSAT RGB dataset to predict the `label` based on the `image` column. The models aim to accurately classify European land cover types using spatial patterns in satellite imagery.
+
+---
+## License
+MIT License
+
+
+## References
+
+EuroSAT RGB dataset on Hugging Face https://huggingface.co/datasets/blanchon/EuroSAT_RGB
+
+Dataset description: 64×64 RGB satellite image tiles of European land cover
 

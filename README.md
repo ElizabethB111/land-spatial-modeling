@@ -6,7 +6,7 @@ This project focuses on building **spatial models** for European land cover clas
 
 ## Dataset
 
-We use the **EuroSAT RGB dataset**, which consists of labeled satellite image patches representing different land use and land cover classes in Europe.  
+I used the **EuroSAT RGB dataset**, which consists of labeled satellite image patches representing different land use and land cover classes in Europe.  
 
 - **Image size:** 64×64 pixels, RGB  
 - **Classes:** 10 categories (e.g., forest, residential areas, rivers, agricultural land)  

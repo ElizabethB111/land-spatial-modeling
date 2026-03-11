@@ -37,6 +37,8 @@ The dataset is available at: [Hugging Face EuroSAT_RGB](https://huggingface.co/d
 
 The work is training models on the EuroSAT RGB dataset to predict the `label` based on the `image` column. The models aim to accurately classify European land cover types using spatial patterns in satellite imagery.
 
+Python Notebooks 2, 3, 4 are iterations of increasing balanced accuracy, with the #4 notebook possessing highest balanced accuracy.
+
 ---
 ## License
 MIT License

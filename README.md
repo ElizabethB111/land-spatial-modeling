@@ -35,7 +35,7 @@ The dataset is available at: [Hugging Face EuroSAT_RGB](https://huggingface.co/d
 
 ## Project Goal
 
-Future work will involve training models on the EuroSAT RGB dataset to predict the `label` based on the `image` column. The models aim to accurately classify European land cover types using spatial patterns in satellite imagery.
+The work is training models on the EuroSAT RGB dataset to predict the `label` based on the `image` column. The models aim to accurately classify European land cover types using spatial patterns in satellite imagery.
 
 ---
 ## License
